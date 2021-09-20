@@ -53,7 +53,7 @@ def equalize_events(dataframe):
 def preprocess():
 	"""load, populate, equalize"""
 	df = load_df(
-		'data/4_GD_14ch_LR_24_01_2020_VStim_20Repeat_3sec_epoch_3_off_0.25_chunk_0.025_4_with_shunk_and_notnull.csv',
+		'https://raw.githubusercontent.com/46265z/streamlit-example/dev/data/4_GD_14ch_LR_24_01_2020_VStim_20Repeat_3sec_epoch_3_off_0.25_chunk_0.025_4_with_shunk_and_notnull.csv',
 		["AF3", "F7", "F3", "F5", "T7", "P7", "O1", "O2", "P8", "T8", "FC6", "F4", "F8", "AF4", "EventId"]
 	)
 	if 'is_df_loaded' not in st.session_state:
